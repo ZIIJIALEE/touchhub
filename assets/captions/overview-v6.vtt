@@ -1,0 +1,213 @@
+WEBVTT
+
+﻿1
+00:00:00.895 --> 00:00:06.039
+TouchHub retargets human glove touch into the native tactile channels of robot hands.
+
+2
+00:00:06.039 --> 00:00:12.316
+Sharpa and XHand use these human demonstrations for three contact-rich manipulation tasks.
+
+3
+00:00:13.495 --> 00:00:18.195
+Human demonstrations are becoming an important source of data for robot learning.
+
+4
+00:00:18.195 --> 00:00:23.048
+As these examples show, researchers collect touch using many different gloves.
+
+5
+00:00:23.048 --> 00:00:27.730
+But their sensing principles, taxel layouts, and surface coverage differ.
+
+6
+00:00:27.730 --> 00:00:33.700
+These differences make direct reuse difficult and motivate the related work we consider next.
+
+7
+00:00:35.695 --> 00:00:38.918
+We first compare the closest prior approaches.
+
+8
+00:00:38.918 --> 00:00:42.373
+FTP-1 uses sensor-specific encoders.
+
+9
+00:00:42.373 --> 00:00:46.941
+TACROSS unifies region-level semantics rather than native taxels.
+
+10
+00:00:46.941 --> 00:00:50.305
+UniTacHand needs paired human and robot touch.
+
+11
+00:00:50.305 --> 00:00:54.077
+TactAlign derives pseudo-pairs from egocentric poses.
+
+12
+00:00:54.077 --> 00:00:59.980
+However, TouchHub reconstructs native readings from layouts and unlabeled recordings.
+
+13
+00:01:01.095 --> 00:01:06.216
+We now introduce TouchHub across different sensing technologies and coverage patterns.
+
+14
+00:01:06.216 --> 00:01:12.372
+Registering their taxel layouts on a shared MANO surface provides a common geometric reference.
+
+15
+00:01:13.495 --> 00:01:18.195
+The shared surface connects heterogeneous gloves to dexterous robot hands.
+
+16
+00:01:18.195 --> 00:01:24.100
+TouchHub translates their recordings directly into each target hand's native tactile channels.
+
+17
+00:01:25.895 --> 00:01:29.243
+Here, a Matrix press is transferred to Crocket.
+
+18
+00:01:29.243 --> 00:01:34.289
+Geometric transport spreads the compact contact across too many taxels.
+
+19
+00:01:34.289 --> 00:01:40.124
+TouchHub restores the footprint and calibrates its intensity toward the measured target response.
+
+20
+00:01:41.229 --> 00:01:45.815
+A fixed cutoff can erase light touches and the weaker contact in a pinch.
+
+21
+00:01:45.815 --> 00:01:49.111
+In bulb screwing, the ninetieth-percentile contact total is
+
+22
+00:01:49.111 --> 00:01:52.486
+two point seven eight times measured XHand with linear gain,
+
+23
+00:01:52.486 --> 00:01:55.937
+versus one point zero nine with TouchHub.
+
+24
+00:02:04.479 --> 00:02:09.486
+Geometry projects source contact, then four Euler steps restore its footprint.
+
+25
+00:02:09.486 --> 00:02:14.088
+A new target provides only its 3D layout and unlabeled recordings.
+
+26
+00:02:14.088 --> 00:02:16.895
+Their statistics calibrate intensity.
+
+27
+00:02:16.895 --> 00:02:22.187
+Local attention links nearby taxels before reconstructing native readings.
+
+28
+00:02:26.129 --> 00:02:31.511
+In this held-out palm press, TouchHub concentrates activation near the measured contact.
+
+29
+00:02:31.511 --> 00:02:35.941
+The bars compare centroid error and off-region activation.
+
+30
+00:02:37.062 --> 00:02:42.148
+The thumb example shows the same goal: a compact footprint at the correct location.
+
+31
+00:02:42.148 --> 00:02:47.787
+TouchHub reduces extra responses without cross-sensor paired contacts for training.
+
+32
+00:02:48.895 --> 00:02:54.720
+Across twelve transfer directions, TouchHub reduces log-reading error to zero point six.
+
+33
+00:02:54.720 --> 00:03:00.311
+That is about thirty percent below OpenTac-style, the strongest baseline for this metric.
+
+34
+00:03:00.311 --> 00:03:03.916
+It also achieves the lowest false activation.
+
+35
+00:03:05.029 --> 00:03:11.263
+Unseen sensors provide three-dimensional layouts and unlabeled touch, while both networks stay frozen.
+
+36
+00:03:11.263 --> 00:03:15.206
+With both Matrix skins held out, TouchHub reduces false activation
+
+37
+00:03:15.206 --> 00:03:18.854
+by eighty-nine percent compared with geometric transport.
+
+38
+00:03:18.854 --> 00:03:22.641
+New devices also show consistent reductions.
+
+39
+00:03:23.762 --> 00:03:27.939
+TouchHub reaches ninety percent success on XHand bulb screwing.
+
+40
+00:03:27.939 --> 00:03:34.895
+Across the target gloves, it achieves forty-eight point one percent average first-contact finger accuracy.
+
+41
+00:03:40.262 --> 00:03:44.308
+On Sharpa, bulb success rises from forty percent with robot-only training
+
+42
+00:03:44.308 --> 00:03:46.803
+to ninety-three percent with TouchHub.
+
+43
+00:03:46.803 --> 00:03:51.755
+The masked baseline removes human touch, while retaining robot touch.
+
+44
+00:04:00.262 --> 00:04:03.876
+On XHand, full-budget success is ninety percent for bulbs,
+
+45
+00:04:03.876 --> 00:04:07.678
+one hundred percent for cups, and ninety percent for wiping.
+
+46
+00:04:07.678 --> 00:04:12.403
+TouchHub outperforms both baselines across all three tasks.
+
+47
+00:04:20.262 --> 00:04:25.292
+Removing either restoration or scale calibration increases false activation.
+
+48
+00:04:25.292 --> 00:04:28.542
+Synthetic intermediate MANO layouts achieve comparable results
+
+49
+00:04:28.542 --> 00:04:32.280
+without data from other real skins for restoration training.
+
+50
+00:04:32.280 --> 00:04:36.291
+Real within-sensor touch recordings are still used.
+
+51
+00:04:37.395 --> 00:04:40.668
+TouchHub makes human touch reusable across robot hands:
+
+52
+00:04:40.668 --> 00:04:44.168
+native-taxel retargeting, frozen-model sensor onboarding,
+
+53
+00:04:44.168 --> 00:04:48.672
+and effective human-to-robot co-training with limited robot data.
