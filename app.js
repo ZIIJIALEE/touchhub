@@ -35,8 +35,13 @@ function pairedMetrics(selectId,chartId,rows,specs,initial){const select=$(selec
 const accuracy=score('10 mm accuracy','Accuracy',higher,3,1),fa=score('False activation','FalseActivation',lower,3,1),reading=score('Reading error','ReadingError',lower,2,2.5),drift=score('3D drift (mm)','Drift',lower,1,35);
 pairedMetrics('#rig-metric','#rig-chart',D.heldOutSkins,[accuracy,fa,reading],'FalseActivation');
 pairedMetrics('#device-metric','#device-chart',D.unseenDevices,[drift,fa],'Drift');
-const abMetrics=[score('10 mm accuracy','accuracy',higher,3,1),score('False activation','falseActivation',lower,3,1),score('Reading error','readingError',lower,2,2)], abSelect=$('#ablation-metric');populate(abSelect,abMetrics,'falseActivation');
-function ablationTable(){const chosen=abMetrics.find(m=>m.key===abSelect.value);$('#ablation-table').innerHTML=`<table><caption class="sr-only">Table 4. Ablations across 12 transfer directions (three seeds)</caption><thead><tr><th scope="col">Variant</th>${abMetrics.map(m=>`<th scope="col" class="${m===chosen?'active-col':''}">${m.label} ${m.direction===higher?'↑':'↓'}</th>`).join('')}</tr></thead><tbody>${D.ablation.map(row=>`<tr${row.name==='TouchHub (full)'?' class="full-method"':''}><th scope="row">${esc(row.name)}</th>${abMetrics.map(m=>`<td class="${m===chosen?'active-col':''}"><span>${row[m.key].toFixed(m.decimals)}</span>${m===chosen?`<span aria-hidden="true" class="bar-track"><i class="${row.name==='TouchHub (full)'?'blue':''}" style="width:${row[m.key]/m.max*100}%"></i></span>`:''}</td>`).join('')}</tr>`).join('')}</tbody></table>`;$('#ablation-scale').textContent=chosen.label+' · '+scaleNote(chosen);}
-abSelect.addEventListener('change',ablationTable);ablationTable();
+const abMetrics=[score('10 mm accuracy','accuracy',higher,3,1),score('False activation','falseActivation',lower,3,0.6),score('Reading error','readingError',lower,2,1.6)];
+const abNames={'Geometric transport only':'Geometry only','Without footprint restoration':'Without restoration','Without scale calibration':'Without calibration','TouchHub (full)':'TouchHub (full)','Restoration with unpaired gloves':'Unpaired gloves','Restoration with synthetic layouts':'Synthetic layouts'};
+for(const [side,initial] of [['left','falseActivation'],['right','readingError']]){
+ const select=$('#abl-'+side),root=$('#abl-plot-'+side),heading=$('#abl-title-'+side);
+ populate(select,abMetrics,initial);
+ function drawAblation(){const m=abMetrics.find(x=>x.key===select.value);heading.textContent=m.label+' '+(m.direction===higher?'↑':'↓');root.innerHTML='<div class="chart">'+D.ablation.map(row=>bar(abNames[row.name]||row.name,row[m.key],m.max,m.decimals,row.name==='TouchHub (full)')).join('')+'</div>'+`<p class="caption">${scaleNote(m)}</p>`;}
+ select.addEventListener('change',drawAblation);drawAblation();
+}
 setInterval(()=>{for(const b of batches.values()){if(!b.sync||!mayPlay(b))continue;const m=b.videos[0];if(!m||m.paused)continue;for(const v of b.videos.slice(1))if(!v.paused&&v.readyState>=3&&Number.isFinite(v.duration)&&Math.abs(v.currentTime-m.currentTime)>.22)v.currentTime=m.currentTime%v.duration;}},900);document.addEventListener('visibilitychange',()=>{if(document.hidden)hero.pause();batches.forEach(updateBatch);});
 })();
