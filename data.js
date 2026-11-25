@@ -235,7 +235,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 8.0,
       "endHoldSeconds": 2.0,
       "video": "assets/robots/sharpa/touchhub_bulb.mp4",
-      "poster": "assets/robots/sharpa/touchhub_bulb_middle.png"
+      "poster": "assets/robots/sharpa/touchhub_bulb_middle.png",
+      "sourceFile": "Sharpa/Light Bulb Screwing/TouchHub-Success-1.mp4",
+      "availableFailures": 0
     },
     {
       "hand": "sharpa",
@@ -250,7 +252,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 7.0,
       "endHoldSeconds": 3.0,
       "video": "assets/robots/sharpa/touchhub_cup.mp4",
-      "poster": "assets/robots/sharpa/touchhub_cup_middle.png"
+      "poster": "assets/robots/sharpa/touchhub_cup_middle.png",
+      "sourceFile": "Sharpa/Paper Cup Separation/TouchHub-Success-1.mp4",
+      "availableFailures": 0
     },
     {
       "hand": "sharpa",
@@ -265,7 +269,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 6.833333333333333,
       "endHoldSeconds": 3.166666666666667,
       "video": "assets/robots/sharpa/touchhub_wipe.mp4",
-      "poster": "assets/robots/sharpa/touchhub_wipe_middle.png"
+      "poster": "assets/robots/sharpa/touchhub_wipe_middle.png",
+      "sourceFile": "Sharpa/Whiteboard Wiping/TouchHub-Success-1.mp4",
+      "availableFailures": 0
     },
     {
       "hand": "sharpa",
@@ -280,7 +286,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 7.341666666666666,
       "endHoldSeconds": 2.658333333333334,
       "video": "assets/robots/sharpa/robot_only_bulb.mp4",
-      "poster": "assets/robots/sharpa/robot_only_bulb_middle.png"
+      "poster": "assets/robots/sharpa/robot_only_bulb_middle.png",
+      "sourceFile": "Sharpa/Light Bulb Screwing/Robot only-Failure-1.mp4",
+      "availableFailures": 1
     },
     {
       "hand": "sharpa",
@@ -295,7 +303,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 7.026666800000001,
       "endHoldSeconds": 2.973333199999999,
       "video": "assets/robots/sharpa/robot_only_cup.mp4",
-      "poster": "assets/robots/sharpa/robot_only_cup_middle.png"
+      "poster": "assets/robots/sharpa/robot_only_cup_middle.png",
+      "sourceFile": "Sharpa/Paper Cup Separation/Robot only-Failure-1.mp4",
+      "availableFailures": 3
     },
     {
       "hand": "sharpa",
@@ -310,7 +320,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 7.275,
       "endHoldSeconds": 2.7249999999999996,
       "video": "assets/robots/sharpa/robot_only_wipe.mp4",
-      "poster": "assets/robots/sharpa/robot_only_wipe_middle.png"
+      "poster": "assets/robots/sharpa/robot_only_wipe_middle.png",
+      "sourceFile": "Sharpa/Whiteboard Wiping/Robot only-Success-1.mp4",
+      "availableFailures": 0
     },
     {
       "hand": "sharpa",
@@ -325,7 +337,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 7.063142857142857,
       "endHoldSeconds": 2.936857142857143,
       "video": "assets/robots/sharpa/human_touch_masked_bulb.mp4",
-      "poster": "assets/robots/sharpa/human_touch_masked_bulb_middle.png"
+      "poster": "assets/robots/sharpa/human_touch_masked_bulb_middle.png",
+      "sourceFile": "Sharpa/Light Bulb Screwing/Human touch masked-Failure-1.mp4",
+      "availableFailures": 1
     },
     {
       "hand": "sharpa",
@@ -340,7 +354,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 6.085,
       "endHoldSeconds": 3.915,
       "video": "assets/robots/sharpa/human_touch_masked_cup.mp4",
-      "poster": "assets/robots/sharpa/human_touch_masked_cup_middle.png"
+      "poster": "assets/robots/sharpa/human_touch_masked_cup_middle.png",
+      "sourceFile": "Sharpa/Paper Cup Separation/Human touch masked-Failure-1.mp4",
+      "availableFailures": 2
     },
     {
       "hand": "sharpa",
@@ -355,7 +371,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 7.19166675,
       "endHoldSeconds": 2.8083332499999996,
       "video": "assets/robots/sharpa/human_touch_masked_wipe.mp4",
-      "poster": "assets/robots/sharpa/human_touch_masked_wipe_middle.png"
+      "poster": "assets/robots/sharpa/human_touch_masked_wipe_middle.png",
+      "sourceFile": "Sharpa/Whiteboard Wiping/Human touch masked-Failure-1.mp4",
+      "availableFailures": 1
     },
     {
       "hand": "xhand",
@@ -370,7 +388,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 7.833333333333333,
       "endHoldSeconds": 2.166666666666667,
       "video": "assets/robots/xhand/touchhub_bulb.mp4",
-      "poster": "assets/robots/xhand/touchhub_bulb_middle.png"
+      "poster": "assets/robots/xhand/touchhub_bulb_middle.png",
+      "sourceFile": "XHand/Light Bulb Screwing/TouchHub-Success-1.mp4",
+      "availableFailures": 0
     },
     {
       "hand": "xhand",
@@ -385,7 +405,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 6.45,
       "endHoldSeconds": 3.55,
       "video": "assets/robots/xhand/touchhub_cup.mp4",
-      "poster": "assets/robots/xhand/touchhub_cup_middle.png"
+      "poster": "assets/robots/xhand/touchhub_cup_middle.png",
+      "sourceFile": "XHand/Paper Cup Separation/TouchHub-Success-1.mp4",
+      "availableFailures": 0
     },
     {
       "hand": "xhand",
@@ -400,7 +422,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 7.25,
       "endHoldSeconds": 2.75,
       "video": "assets/robots/xhand/touchhub_wipe.mp4",
-      "poster": "assets/robots/xhand/touchhub_wipe_middle.png"
+      "poster": "assets/robots/xhand/touchhub_wipe_middle.png",
+      "sourceFile": "XHand/Whiteboard Wiping/TouchHub-Success-1.mp4",
+      "availableFailures": 0
     },
     {
       "hand": "xhand",
@@ -415,7 +439,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 7.4750000000000005,
       "endHoldSeconds": 2.5249999999999995,
       "video": "assets/robots/xhand/robot_only_bulb.mp4",
-      "poster": "assets/robots/xhand/robot_only_bulb_middle.png"
+      "poster": "assets/robots/xhand/robot_only_bulb_middle.png",
+      "sourceFile": "XHand/Light Bulb Screwing/Robot only-Failure-1.mp4",
+      "availableFailures": 1
     },
     {
       "hand": "xhand",
@@ -430,7 +456,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 6.15,
       "endHoldSeconds": 3.8499999999999996,
       "video": "assets/robots/xhand/robot_only_cup.mp4",
-      "poster": "assets/robots/xhand/robot_only_cup_middle.png"
+      "poster": "assets/robots/xhand/robot_only_cup_middle.png",
+      "sourceFile": "XHand/Paper Cup Separation/Robot only-Failure-1.mp4",
+      "availableFailures": 2
     },
     {
       "hand": "xhand",
@@ -445,7 +473,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 6.900000000000001,
       "endHoldSeconds": 3.0999999999999988,
       "video": "assets/robots/xhand/robot_only_wipe.mp4",
-      "poster": "assets/robots/xhand/robot_only_wipe_middle.png"
+      "poster": "assets/robots/xhand/robot_only_wipe_middle.png",
+      "sourceFile": "XHand/Whiteboard Wiping/Robot only-Success-1.mp4",
+      "availableFailures": 0
     },
     {
       "hand": "xhand",
@@ -460,7 +490,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 6.67,
       "endHoldSeconds": 3.33,
       "video": "assets/robots/xhand/human_touch_masked_bulb.mp4",
-      "poster": "assets/robots/xhand/human_touch_masked_bulb_middle.png"
+      "poster": "assets/robots/xhand/human_touch_masked_bulb_middle.png",
+      "sourceFile": "XHand/Light Bulb Screwing/Human touch masked-Failure-1.mp4",
+      "availableFailures": 1
     },
     {
       "hand": "xhand",
@@ -475,7 +507,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 6.65,
       "endHoldSeconds": 3.3499999999999996,
       "video": "assets/robots/xhand/human_touch_masked_cup.mp4",
-      "poster": "assets/robots/xhand/human_touch_masked_cup_middle.png"
+      "poster": "assets/robots/xhand/human_touch_masked_cup_middle.png",
+      "sourceFile": "XHand/Paper Cup Separation/Human touch masked-Failure-1.mp4",
+      "availableFailures": 2
     },
     {
       "hand": "xhand",
@@ -490,7 +524,9 @@ window.TOUCHHUB_DATA ={
       "motionSeconds": 7.44,
       "endHoldSeconds": 2.5599999999999996,
       "video": "assets/robots/xhand/human_touch_masked_wipe.mp4",
-      "poster": "assets/robots/xhand/human_touch_masked_wipe_middle.png"
+      "poster": "assets/robots/xhand/human_touch_masked_wipe_middle.png",
+      "sourceFile": "XHand/Whiteboard Wiping/Human touch masked-Success-1.mp4",
+      "availableFailures": 0
     },
     {
       "hand": "sharpa",
@@ -503,7 +539,9 @@ window.TOUCHHUB_DATA ={
       "speed": 4.5,
       "durationSeconds": 10,
       "video": "assets/robots/sharpa/human_only_bulb.mp4",
-      "poster": "assets/robots/sharpa/human_only_bulb.jpg"
+      "poster": "assets/robots/sharpa/human_only_bulb.jpg",
+      "sourceFile": "Sharpa/Light Bulb Screwing/Human only-Failure-1.mp4",
+      "availableFailures": 2
     },
     {
       "hand": "sharpa",
@@ -516,7 +554,9 @@ window.TOUCHHUB_DATA ={
       "speed": 13.0,
       "durationSeconds": 10,
       "video": "assets/robots/sharpa/threshold_bulb.mp4",
-      "poster": "assets/robots/sharpa/threshold_bulb.jpg"
+      "poster": "assets/robots/sharpa/threshold_bulb.jpg",
+      "sourceFile": "Sharpa/Light Bulb Screwing/Touch thresholding-Success-1.mp4",
+      "availableFailures": 0
     },
     {
       "hand": "sharpa",
@@ -529,7 +569,9 @@ window.TOUCHHUB_DATA ={
       "speed": 4.5,
       "durationSeconds": 10,
       "video": "assets/robots/sharpa/ftp1_style_bulb.mp4",
-      "poster": "assets/robots/sharpa/ftp1_style_bulb.jpg"
+      "poster": "assets/robots/sharpa/ftp1_style_bulb.jpg",
+      "sourceFile": "Sharpa/Light Bulb Screwing/FTP-1-style zone encoder-Failure-1.mp4",
+      "availableFailures": 1
     },
     {
       "hand": "sharpa",
@@ -542,7 +584,9 @@ window.TOUCHHUB_DATA ={
       "speed": 4.0,
       "durationSeconds": 10,
       "video": "assets/robots/sharpa/human_only_cup.mp4",
-      "poster": "assets/robots/sharpa/human_only_cup.jpg"
+      "poster": "assets/robots/sharpa/human_only_cup.jpg",
+      "sourceFile": "Sharpa/Paper Cup Separation/Human only-Failure-1.mp4",
+      "availableFailures": 2
     },
     {
       "hand": "sharpa",
@@ -555,7 +599,9 @@ window.TOUCHHUB_DATA ={
       "speed": 3.5,
       "durationSeconds": 10,
       "video": "assets/robots/sharpa/threshold_cup.mp4",
-      "poster": "assets/robots/sharpa/threshold_cup.jpg"
+      "poster": "assets/robots/sharpa/threshold_cup.jpg",
+      "sourceFile": "Sharpa/Paper Cup Separation/Touch thresholding-Success-1.mp4",
+      "availableFailures": 0
     },
     {
       "hand": "sharpa",
@@ -563,12 +609,14 @@ window.TOUCHHUB_DATA ={
       "taskLabel": "Paper Cup Separation",
       "method": "FTP-1-style zone encoder",
       "methodId": "ftp1_style",
-      "outcome": "Success",
-      "speedLabel": "3.5×",
-      "speed": 3.5,
+      "outcome": "Failure",
+      "speedLabel": "4×",
+      "speed": 4.0,
       "durationSeconds": 10,
-      "video": "assets/robots/sharpa/ftp1_style_cup.mp4",
-      "poster": "assets/robots/sharpa/ftp1_style_cup.jpg"
+      "video": "assets/robots/sharpa/ftp1_style_cup_failure1.mp4",
+      "poster": "assets/robots/sharpa/ftp1_style_cup_failure1.jpg",
+      "sourceFile": "Sharpa/Paper Cup Separation/FTP-1-style zone encoder-Failure-1.mp4",
+      "availableFailures": 1
     },
     {
       "hand": "sharpa",
@@ -581,7 +629,9 @@ window.TOUCHHUB_DATA ={
       "speed": 1,
       "durationSeconds": 10,
       "video": "assets/robots/sharpa/human_only_wipe.mp4",
-      "poster": "assets/robots/sharpa/human_only_wipe.jpg"
+      "poster": "assets/robots/sharpa/human_only_wipe.jpg",
+      "sourceFile": "Sharpa/Whiteboard Wiping/Human only-Failure-1.mp4",
+      "availableFailures": 2
     },
     {
       "hand": "sharpa",
@@ -594,7 +644,9 @@ window.TOUCHHUB_DATA ={
       "speed": 3.0,
       "durationSeconds": 10,
       "video": "assets/robots/sharpa/threshold_wipe.mp4",
-      "poster": "assets/robots/sharpa/threshold_wipe.jpg"
+      "poster": "assets/robots/sharpa/threshold_wipe.jpg",
+      "sourceFile": "Sharpa/Whiteboard Wiping/Touch thresholding-Failure-1.mp4",
+      "availableFailures": 2
     },
     {
       "hand": "sharpa",
@@ -602,12 +654,14 @@ window.TOUCHHUB_DATA ={
       "taskLabel": "Whiteboard Wiping",
       "method": "FTP-1-style zone encoder",
       "methodId": "ftp1_style",
-      "outcome": "Success",
-      "speedLabel": "4×",
-      "speed": 4.0,
+      "outcome": "Failure",
+      "speedLabel": "3×",
+      "speed": 3.0,
       "durationSeconds": 10,
-      "video": "assets/robots/sharpa/ftp1_style_wipe.mp4",
-      "poster": "assets/robots/sharpa/ftp1_style_wipe.jpg"
+      "video": "assets/robots/sharpa/ftp1_style_wipe_failure1.mp4",
+      "poster": "assets/robots/sharpa/ftp1_style_wipe_failure1.jpg",
+      "sourceFile": "Sharpa/Whiteboard Wiping/FTP-1-style zone encoder-Failure-1.mp4",
+      "availableFailures": 1
     },
     {
       "hand": "xhand",
@@ -620,7 +674,9 @@ window.TOUCHHUB_DATA ={
       "speed": 7.0,
       "durationSeconds": 10,
       "video": "assets/robots/xhand/human_only_bulb.mp4",
-      "poster": "assets/robots/xhand/human_only_bulb.jpg"
+      "poster": "assets/robots/xhand/human_only_bulb.jpg",
+      "sourceFile": "XHand/Light Bulb Screwing/Human only-Failure-1.mp4",
+      "availableFailures": 1
     },
     {
       "hand": "xhand",
@@ -633,7 +689,9 @@ window.TOUCHHUB_DATA ={
       "speed": 2.5,
       "durationSeconds": 10,
       "video": "assets/robots/xhand/threshold_bulb.mp4",
-      "poster": "assets/robots/xhand/threshold_bulb.jpg"
+      "poster": "assets/robots/xhand/threshold_bulb.jpg",
+      "sourceFile": "XHand/Light Bulb Screwing/Touch thresholding-Failure-1.mp4",
+      "availableFailures": 1
     },
     {
       "hand": "xhand",
@@ -646,7 +704,9 @@ window.TOUCHHUB_DATA ={
       "speed": 7.0,
       "durationSeconds": 10,
       "video": "assets/robots/xhand/ftp1_style_bulb.mp4",
-      "poster": "assets/robots/xhand/ftp1_style_bulb.jpg"
+      "poster": "assets/robots/xhand/ftp1_style_bulb.jpg",
+      "sourceFile": "XHand/Light Bulb Screwing/FTP-1-style zone encoder-Failure-1.mp4",
+      "availableFailures": 2
     },
     {
       "hand": "xhand",
@@ -659,7 +719,9 @@ window.TOUCHHUB_DATA ={
       "speed": 2.5,
       "durationSeconds": 10,
       "video": "assets/robots/xhand/human_only_cup.mp4",
-      "poster": "assets/robots/xhand/human_only_cup.jpg"
+      "poster": "assets/robots/xhand/human_only_cup.jpg",
+      "sourceFile": "XHand/Paper Cup Separation/Human only-Failure-1.mp4",
+      "availableFailures": 2
     },
     {
       "hand": "xhand",
@@ -672,7 +734,9 @@ window.TOUCHHUB_DATA ={
       "speed": 3.0,
       "durationSeconds": 10,
       "video": "assets/robots/xhand/threshold_cup.mp4",
-      "poster": "assets/robots/xhand/threshold_cup.jpg"
+      "poster": "assets/robots/xhand/threshold_cup.jpg",
+      "sourceFile": "XHand/Paper Cup Separation/Touch thresholding-Failure-1.mp4",
+      "availableFailures": 1
     },
     {
       "hand": "xhand",
@@ -680,12 +744,14 @@ window.TOUCHHUB_DATA ={
       "taskLabel": "Paper Cup Separation",
       "method": "FTP-1-style zone encoder",
       "methodId": "ftp1_style",
-      "outcome": "Success",
-      "speedLabel": "2×",
-      "speed": 2.0,
+      "outcome": "Failure",
+      "speedLabel": "3×",
+      "speed": 3.0,
       "durationSeconds": 10,
-      "video": "assets/robots/xhand/ftp1_style_cup.mp4",
-      "poster": "assets/robots/xhand/ftp1_style_cup.jpg"
+      "video": "assets/robots/xhand/ftp1_style_cup_failure1.mp4",
+      "poster": "assets/robots/xhand/ftp1_style_cup_failure1.jpg",
+      "sourceFile": "XHand/Paper Cup Separation/FTP-1-style zone encoder-Failure-1.mp4",
+      "availableFailures": 1
     },
     {
       "hand": "xhand",
@@ -698,7 +764,9 @@ window.TOUCHHUB_DATA ={
       "speed": 4.5,
       "durationSeconds": 10,
       "video": "assets/robots/xhand/human_only_wipe.mp4",
-      "poster": "assets/robots/xhand/human_only_wipe.jpg"
+      "poster": "assets/robots/xhand/human_only_wipe.jpg",
+      "sourceFile": "XHand/Whiteboard Wiping/Human only-Failure-1.mp4",
+      "availableFailures": 1
     },
     {
       "hand": "xhand",
@@ -711,7 +779,9 @@ window.TOUCHHUB_DATA ={
       "speed": 1.5,
       "durationSeconds": 10,
       "video": "assets/robots/xhand/threshold_wipe.mp4",
-      "poster": "assets/robots/xhand/threshold_wipe.jpg"
+      "poster": "assets/robots/xhand/threshold_wipe.jpg",
+      "sourceFile": "XHand/Whiteboard Wiping/Touch thresholding-Failure-1.mp4",
+      "availableFailures": 1
     },
     {
       "hand": "xhand",
@@ -724,7 +794,9 @@ window.TOUCHHUB_DATA ={
       "speed": 2.5,
       "durationSeconds": 10,
       "video": "assets/robots/xhand/ftp1_style_wipe.mp4",
-      "poster": "assets/robots/xhand/ftp1_style_wipe.jpg"
+      "poster": "assets/robots/xhand/ftp1_style_wipe.jpg",
+      "sourceFile": "XHand/Whiteboard Wiping/FTP-1-style zone encoder-Success-1.mp4",
+      "availableFailures": 0
     }
   ],
   "successRates": [
