@@ -4,7 +4,7 @@
  * benchmark[].methods: { id, name, fullName, value }; direction is higher/lower.
  * robotClips: hand sharpa/xhand; task bulb/cup/wipe; relative video/poster paths.
  * successRates[].methods: { name, value, ci95: [lower, upper] }.
- * fullRobotTable contains all six baselines, not only the displayed three methods.
+ * fullRobotTable contains all six methods, including each robot demonstration budget.
  * unseenDevices drift values use millimeters; false activation remains a fraction.
  * budgets.robot/glove: x and same-length series[].values, never temporal samples.
  * ablation: name, accuracy, falseActivation, readingError.
@@ -491,6 +491,240 @@ window.TOUCHHUB_DATA ={
       "endHoldSeconds": 2.5599999999999996,
       "video": "assets/robots/xhand/human_touch_masked_wipe.mp4",
       "poster": "assets/robots/xhand/human_touch_masked_wipe_middle.png"
+    },
+    {
+      "hand": "sharpa",
+      "task": "bulb",
+      "taskLabel": "Light Bulb Screwing",
+      "method": "Human only",
+      "methodId": "human_only",
+      "outcome": "Failure",
+      "speedLabel": "4.5×",
+      "speed": 4.5,
+      "durationSeconds": 10,
+      "video": "assets/robots/sharpa/human_only_bulb.mp4",
+      "poster": "assets/robots/sharpa/human_only_bulb.jpg"
+    },
+    {
+      "hand": "sharpa",
+      "task": "bulb",
+      "taskLabel": "Light Bulb Screwing",
+      "method": "Touch thresholding",
+      "methodId": "threshold",
+      "outcome": "Success",
+      "speedLabel": "13×",
+      "speed": 13.0,
+      "durationSeconds": 10,
+      "video": "assets/robots/sharpa/threshold_bulb.mp4",
+      "poster": "assets/robots/sharpa/threshold_bulb.jpg"
+    },
+    {
+      "hand": "sharpa",
+      "task": "bulb",
+      "taskLabel": "Light Bulb Screwing",
+      "method": "FTP-1-style zone encoder",
+      "methodId": "ftp1_style",
+      "outcome": "Failure",
+      "speedLabel": "4.5×",
+      "speed": 4.5,
+      "durationSeconds": 10,
+      "video": "assets/robots/sharpa/ftp1_style_bulb.mp4",
+      "poster": "assets/robots/sharpa/ftp1_style_bulb.jpg"
+    },
+    {
+      "hand": "sharpa",
+      "task": "cup",
+      "taskLabel": "Paper Cup Separation",
+      "method": "Human only",
+      "methodId": "human_only",
+      "outcome": "Failure",
+      "speedLabel": "4×",
+      "speed": 4.0,
+      "durationSeconds": 10,
+      "video": "assets/robots/sharpa/human_only_cup.mp4",
+      "poster": "assets/robots/sharpa/human_only_cup.jpg"
+    },
+    {
+      "hand": "sharpa",
+      "task": "cup",
+      "taskLabel": "Paper Cup Separation",
+      "method": "Touch thresholding",
+      "methodId": "threshold",
+      "outcome": "Success",
+      "speedLabel": "3.5×",
+      "speed": 3.5,
+      "durationSeconds": 10,
+      "video": "assets/robots/sharpa/threshold_cup.mp4",
+      "poster": "assets/robots/sharpa/threshold_cup.jpg"
+    },
+    {
+      "hand": "sharpa",
+      "task": "cup",
+      "taskLabel": "Paper Cup Separation",
+      "method": "FTP-1-style zone encoder",
+      "methodId": "ftp1_style",
+      "outcome": "Success",
+      "speedLabel": "3.5×",
+      "speed": 3.5,
+      "durationSeconds": 10,
+      "video": "assets/robots/sharpa/ftp1_style_cup.mp4",
+      "poster": "assets/robots/sharpa/ftp1_style_cup.jpg"
+    },
+    {
+      "hand": "sharpa",
+      "task": "wipe",
+      "taskLabel": "Whiteboard Wiping",
+      "method": "Human only",
+      "methodId": "human_only",
+      "outcome": "Failure",
+      "speedLabel": "1×",
+      "speed": 1,
+      "durationSeconds": 10,
+      "video": "assets/robots/sharpa/human_only_wipe.mp4",
+      "poster": "assets/robots/sharpa/human_only_wipe.jpg"
+    },
+    {
+      "hand": "sharpa",
+      "task": "wipe",
+      "taskLabel": "Whiteboard Wiping",
+      "method": "Touch thresholding",
+      "methodId": "threshold",
+      "outcome": "Failure",
+      "speedLabel": "3×",
+      "speed": 3.0,
+      "durationSeconds": 10,
+      "video": "assets/robots/sharpa/threshold_wipe.mp4",
+      "poster": "assets/robots/sharpa/threshold_wipe.jpg"
+    },
+    {
+      "hand": "sharpa",
+      "task": "wipe",
+      "taskLabel": "Whiteboard Wiping",
+      "method": "FTP-1-style zone encoder",
+      "methodId": "ftp1_style",
+      "outcome": "Success",
+      "speedLabel": "4×",
+      "speed": 4.0,
+      "durationSeconds": 10,
+      "video": "assets/robots/sharpa/ftp1_style_wipe.mp4",
+      "poster": "assets/robots/sharpa/ftp1_style_wipe.jpg"
+    },
+    {
+      "hand": "xhand",
+      "task": "bulb",
+      "taskLabel": "Light Bulb Screwing",
+      "method": "Human only",
+      "methodId": "human_only",
+      "outcome": "Failure",
+      "speedLabel": "7×",
+      "speed": 7.0,
+      "durationSeconds": 10,
+      "video": "assets/robots/xhand/human_only_bulb.mp4",
+      "poster": "assets/robots/xhand/human_only_bulb.jpg"
+    },
+    {
+      "hand": "xhand",
+      "task": "bulb",
+      "taskLabel": "Light Bulb Screwing",
+      "method": "Touch thresholding",
+      "methodId": "threshold",
+      "outcome": "Failure",
+      "speedLabel": "2.5×",
+      "speed": 2.5,
+      "durationSeconds": 10,
+      "video": "assets/robots/xhand/threshold_bulb.mp4",
+      "poster": "assets/robots/xhand/threshold_bulb.jpg"
+    },
+    {
+      "hand": "xhand",
+      "task": "bulb",
+      "taskLabel": "Light Bulb Screwing",
+      "method": "FTP-1-style zone encoder",
+      "methodId": "ftp1_style",
+      "outcome": "Failure",
+      "speedLabel": "7×",
+      "speed": 7.0,
+      "durationSeconds": 10,
+      "video": "assets/robots/xhand/ftp1_style_bulb.mp4",
+      "poster": "assets/robots/xhand/ftp1_style_bulb.jpg"
+    },
+    {
+      "hand": "xhand",
+      "task": "cup",
+      "taskLabel": "Paper Cup Separation",
+      "method": "Human only",
+      "methodId": "human_only",
+      "outcome": "Failure",
+      "speedLabel": "2.5×",
+      "speed": 2.5,
+      "durationSeconds": 10,
+      "video": "assets/robots/xhand/human_only_cup.mp4",
+      "poster": "assets/robots/xhand/human_only_cup.jpg"
+    },
+    {
+      "hand": "xhand",
+      "task": "cup",
+      "taskLabel": "Paper Cup Separation",
+      "method": "Touch thresholding",
+      "methodId": "threshold",
+      "outcome": "Failure",
+      "speedLabel": "3×",
+      "speed": 3.0,
+      "durationSeconds": 10,
+      "video": "assets/robots/xhand/threshold_cup.mp4",
+      "poster": "assets/robots/xhand/threshold_cup.jpg"
+    },
+    {
+      "hand": "xhand",
+      "task": "cup",
+      "taskLabel": "Paper Cup Separation",
+      "method": "FTP-1-style zone encoder",
+      "methodId": "ftp1_style",
+      "outcome": "Success",
+      "speedLabel": "2×",
+      "speed": 2.0,
+      "durationSeconds": 10,
+      "video": "assets/robots/xhand/ftp1_style_cup.mp4",
+      "poster": "assets/robots/xhand/ftp1_style_cup.jpg"
+    },
+    {
+      "hand": "xhand",
+      "task": "wipe",
+      "taskLabel": "Whiteboard Wiping",
+      "method": "Human only",
+      "methodId": "human_only",
+      "outcome": "Failure",
+      "speedLabel": "4.5×",
+      "speed": 4.5,
+      "durationSeconds": 10,
+      "video": "assets/robots/xhand/human_only_wipe.mp4",
+      "poster": "assets/robots/xhand/human_only_wipe.jpg"
+    },
+    {
+      "hand": "xhand",
+      "task": "wipe",
+      "taskLabel": "Whiteboard Wiping",
+      "method": "Touch thresholding",
+      "methodId": "threshold",
+      "outcome": "Failure",
+      "speedLabel": "1.5×",
+      "speed": 1.5,
+      "durationSeconds": 10,
+      "video": "assets/robots/xhand/threshold_wipe.mp4",
+      "poster": "assets/robots/xhand/threshold_wipe.jpg"
+    },
+    {
+      "hand": "xhand",
+      "task": "wipe",
+      "taskLabel": "Whiteboard Wiping",
+      "method": "FTP-1-style zone encoder",
+      "methodId": "ftp1_style",
+      "outcome": "Success",
+      "speedLabel": "2.5×",
+      "speed": 2.5,
+      "durationSeconds": 10,
+      "video": "assets/robots/xhand/ftp1_style_wipe.mp4",
+      "poster": "assets/robots/xhand/ftp1_style_wipe.jpg"
     }
   ],
   "successRates": [
@@ -510,6 +744,14 @@ window.TOUCHHUB_DATA ={
           ]
         },
         {
+          "name": "Human touch masked",
+          "value": 50,
+          "ci95": [
+            33,
+            67
+          ]
+        },
+        {
           "name": "Robot only",
           "value": 40,
           "ci95": [
@@ -518,11 +760,27 @@ window.TOUCHHUB_DATA ={
           ]
         },
         {
-          "name": "Human touch masked",
-          "value": 50,
+          "name": "Human only",
+          "value": 30,
           "ci95": [
-            33,
-            67
+            17,
+            48
+          ]
+        },
+        {
+          "name": "Touch thresholding",
+          "value": 47,
+          "ci95": [
+            30,
+            64
+          ]
+        },
+        {
+          "name": "FTP-1-style zone encoder",
+          "value": 47,
+          "ci95": [
+            30,
+            64
           ]
         }
       ]
@@ -543,6 +801,14 @@ window.TOUCHHUB_DATA ={
           ]
         },
         {
+          "name": "Human touch masked",
+          "value": 60,
+          "ci95": [
+            42,
+            75
+          ]
+        },
+        {
           "name": "Robot only",
           "value": 0,
           "ci95": [
@@ -551,11 +817,27 @@ window.TOUCHHUB_DATA ={
           ]
         },
         {
-          "name": "Human touch masked",
-          "value": 60,
+          "name": "Human only",
+          "value": 0,
           "ci95": [
-            42,
-            75
+            0,
+            11
+          ]
+        },
+        {
+          "name": "Touch thresholding",
+          "value": 100,
+          "ci95": [
+            89,
+            100
+          ]
+        },
+        {
+          "name": "FTP-1-style zone encoder",
+          "value": 57,
+          "ci95": [
+            39,
+            73
           ]
         }
       ]
@@ -576,6 +858,14 @@ window.TOUCHHUB_DATA ={
           ]
         },
         {
+          "name": "Human touch masked",
+          "value": 87,
+          "ci95": [
+            70,
+            95
+          ]
+        },
+        {
           "name": "Robot only",
           "value": 100,
           "ci95": [
@@ -584,11 +874,27 @@ window.TOUCHHUB_DATA ={
           ]
         },
         {
-          "name": "Human touch masked",
-          "value": 87,
+          "name": "Human only",
+          "value": 0,
           "ci95": [
-            70,
-            95
+            0,
+            11
+          ]
+        },
+        {
+          "name": "Touch thresholding",
+          "value": 50,
+          "ci95": [
+            33,
+            67
+          ]
+        },
+        {
+          "name": "FTP-1-style zone encoder",
+          "value": 80,
+          "ci95": [
+            63,
+            90
           ]
         }
       ]
@@ -609,6 +915,14 @@ window.TOUCHHUB_DATA ={
           ]
         },
         {
+          "name": "Human touch masked",
+          "value": 60,
+          "ci95": [
+            31,
+            83
+          ]
+        },
+        {
           "name": "Robot only",
           "value": 60,
           "ci95": [
@@ -617,11 +931,27 @@ window.TOUCHHUB_DATA ={
           ]
         },
         {
-          "name": "Human touch masked",
-          "value": 60,
+          "name": "Human only",
+          "value": 30,
           "ci95": [
-            31,
-            83
+            11,
+            60
+          ]
+        },
+        {
+          "name": "Touch thresholding",
+          "value": 30,
+          "ci95": [
+            11,
+            60
+          ]
+        },
+        {
+          "name": "FTP-1-style zone encoder",
+          "value": 70,
+          "ci95": [
+            40,
+            89
           ]
         }
       ]
@@ -642,6 +972,14 @@ window.TOUCHHUB_DATA ={
           ]
         },
         {
+          "name": "Human touch masked",
+          "value": 55,
+          "ci95": [
+            34,
+            74
+          ]
+        },
+        {
           "name": "Robot only",
           "value": 50,
           "ci95": [
@@ -650,11 +988,27 @@ window.TOUCHHUB_DATA ={
           ]
         },
         {
-          "name": "Human touch masked",
-          "value": 55,
+          "name": "Human only",
+          "value": 35,
           "ci95": [
-            34,
-            74
+            18,
+            57
+          ]
+        },
+        {
+          "name": "Touch thresholding",
+          "value": 35,
+          "ci95": [
+            18,
+            57
+          ]
+        },
+        {
+          "name": "FTP-1-style zone encoder",
+          "value": 60,
+          "ci95": [
+            39,
+            78
           ]
         }
       ]
@@ -675,6 +1029,14 @@ window.TOUCHHUB_DATA ={
           ]
         },
         {
+          "name": "Human touch masked",
+          "value": 55,
+          "ci95": [
+            34,
+            74
+          ]
+        },
+        {
           "name": "Robot only",
           "value": 55,
           "ci95": [
@@ -683,11 +1045,27 @@ window.TOUCHHUB_DATA ={
           ]
         },
         {
-          "name": "Human touch masked",
-          "value": 55,
+          "name": "Human only",
+          "value": 25,
           "ci95": [
-            34,
-            74
+            11,
+            47
+          ]
+        },
+        {
+          "name": "Touch thresholding",
+          "value": 40,
+          "ci95": [
+            22,
+            61
+          ]
+        },
+        {
+          "name": "FTP-1-style zone encoder",
+          "value": 60,
+          "ci95": [
+            39,
+            78
           ]
         }
       ]
